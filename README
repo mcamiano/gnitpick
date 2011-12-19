@@ -1,0 +1,5 @@
+GnitPick was in a pre-alpha state of development when development was stopped.  The tool ran until Jython was updated to 2.x, but was never complete or stable.
+
+GnitPick was more of a desktop toy to explore how a scripting language running on top of the JVM could glue together a GUI app with strong access to Java libraries, and serve as the basis for a RAD/4GL-like development toolkit. 
+
+Consider the code I've written for GnitPick to be released into the public domain.  Each of the libraries used has its own license which applies to its components. 

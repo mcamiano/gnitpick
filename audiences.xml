@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<audiences>
+
+    <type name="xml" label="XML Resource" collection-label="XML Resources">
+           <uri protocol="file" suffix=".xml" />
+            <new-instance-template><![CDATA[
+<document/>
+]]></new-instance-template>
+    </type>
+    
+    <type name="story" label="Story"  collection-label="User Stories" >
+         <uri protocol="file" suffix=".story" />
+    <new-instance-template><![CDATA[
+<story id="{$someid}" title="{$sometitle}" >
+<text>Description-Of-Story</text>
+
+<history timestamp="MM-DD-YYYY HH:MM EST">Authored by (Initials)</history>
+
+<task>Do something.</task>
+<task>Do something else.</task>
+</story>
+]]></new-instance-template>
+    </type>
+    
+    <!-- The rest of this is Pie in the sky workflow stuff. -->
+    
+    <application-domain name="Project">
+        <role>team lead</role>
+        <role>team member</role>
+        <role>client</role>
+        <role>public</role>
+    </application-domain>
+
+    <application-domain name="Print Production Workflow">
+        <role>sales</role>
+        <role>admin</role>
+        <role>prepress</role>
+        <role>press</role>
+        <role>finishing</role>
+        <role>client</role>
+        <role>public</role>
+        
+        <!-- authority can be granted, and revoked(/surrendured) -->
+        <!-- authority is an aspect with two concerns: 
+              application capabilities with respect to a data set,
+              - Roles lacking the authority to take an action on a data set should be prevented from doing so
+              and
+              visibility of a data set with respect to a role. 
+              - Roles lacking the proper authority should never be aware of data.
+            
+            Visibility can be treated as a capability. Lacking the authority, a
+            document would not load for a given role.  
+            
+            This implies that application capabilities be identified explicitly, and 
+            that entry points or event triggers be guarded. The guard can be
+            negative - to occlude an otherwise present piece of code - or positive
+            - to include an otherwise absent piece of code. 
+        -->
+        <authority>granted</authority>
+        <authority>revoked</authority>
+        
+        <!-- responsibility can be accepted (acknowledged), 
+            performed (held or possessed), fulfilled (fully discharged), or refused; 
+            if not acknowledged, responsibility is indeterminate 
+        --> 
+        <responsibility>accepted</responsibility>
+        <responsiblilty>performing</responsiblilty>
+        <responsibility>fulfilled</responsibility>
+        
+        <responsibility>delegated</responsibility><!-- to a role subordinate to your authority -->
+        <responsibility>derogated</responsibility><!-- reassigned to another role by someone above your authority -->        
+        <responsibility>disputed</responsibility><!-- not accepted by you or someone above your authority -->
+        <responsibility>relegated</responsibility><!-- to a role outside of your authority -->
+        
+        <!-- or -->
+        <responsibility>refused</responsibility>
+        <responsibility>reassigned</responsibility>
+        
+    </application-domain>
+
+    
+    
+</audiences>

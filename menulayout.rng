@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="menubar">
+      <attribute name="handlers">
+        <data type="NCName"/>
+      </attribute>
+      <oneOrMore>
+        <ref name="menu"/>
+      </oneOrMore>
+    </element>
+  </start>
+  <define name="menu">
+    <element name="menu">
+      <optional>
+        <attribute name="label"/>
+      </optional>
+      <attribute name="name">
+        <data type="NCName"/>
+      </attribute>
+      <optional>
+        <attribute name="shortcutkey">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <ref name="menu"/>
+          <element name="item">
+            <optional>
+              <attribute name="label"/>
+            </optional>
+            <optional>
+              <attribute name="mnemonic">
+                <data type="NCName"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="name">
+                <data type="NCName"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="shortcutkey"/>
+            </optional>
+            <choice>
+              <element name="html">
+                <element name="body">
+                  <element name="img">
+                    <attribute name="src">
+                      <data type="anyURI"/>
+                    </attribute>
+                  </element>
+                  <element name="center">
+                    <element name="h2">
+                      <text/>
+                    </element>
+                  </element>
+                  <oneOrMore>
+                    <element name="p">
+                      <text/>
+                    </element>
+                  </oneOrMore>
+                </element>
+              </element>
+              <zeroOrMore>
+                <element name="radio">
+                  <attribute name="label"/>
+                  <attribute name="name">
+                    <data type="NCName"/>
+                  </attribute>
+                  <optional>
+                    <attribute name="selected">
+                      <data type="NCName"/>
+                    </attribute>
+                  </optional>
+                </element>
+              </zeroOrMore>
+              <group>
+                <element name="description">
+                  <text/>
+                </element>
+                <element name="title">
+                  <text/>
+                </element>
+              </group>
+              <zeroOrMore>
+                <element name="um">
+                  <text/>
+                </element>
+              </zeroOrMore>
+            </choice>
+          </element>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+</grammar>

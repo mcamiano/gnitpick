@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<storyboard>
+   <frame src="EditAStory.story"><abstract>Show a list of stories</abstract></frame>
+   <frame src="ShowAListOfStories.story"><abstract>Edit a story</abstract></frame>
+   <frame src="HandleErrorsGracefully.story"><abstract>Handle Errors Gracefully</abstract></frame>
+</storyboard>

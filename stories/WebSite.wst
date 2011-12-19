@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?oxygen RNGSchema="../website.rnc" type="compact"?>
+<website title="My Web Site">
+   <section label="Home">
+      <page>
+         <header>
+            <content>This is a sample of the website DTD.</content>
+         </header>
+
+         <content>
+         <anchor id="homepage" label="Home Page" />
+
+         <h1>Home Page</h1>
+
+         <para>The content element allows a para element, an anchor, h1, h2, h3, and h4 elements, as well as an image element.</para> 
+
+         <para>The content model for the "content" element looks like this: (#PCDATA|para|anchor|h1|h2|h3|h4|image)</para> 
+
+         So it also has a few levels of heading elements, an "anchor" that can be targeted by hypertext links and index generators, and an image element for placing graphics.</content>
+
+         <sidebar>
+            <toc />
+         </sidebar>
+      </page>
+
+      <page>
+         <content>
+            <anchor id="about" label="About This Site" />
+
+            <h1>About This Site</h1>
+
+            <para>This site was inspired by the docbook website dtd, a customization of the DocBook DTD. See the 
+            <hyperlink idref="links">Links Section</hyperlink>
+
+            for a link to DocBook information.</para>
+
+            <para>This DTD is not a DocBook derivative. Rather, it is a much smaller set of elements initially used to illustrate features of XML DTDs.</para>
+
+            <para>This DTD was designed, or rather quickly assembled, by 
+            <hyperlink href="mailto:mitch.amiano@softwareadjuvant.com">Mitch Amiano</hyperlink>
+
+            .</para>
+         </content>
+      </page>
+   </section>
+   <section label="Links">
+      <page>
+         <content>
+            <anchor id="links" label="Links" />
+
+            <h2>Fan Out Links</h2>
+
+            <para>The 
+            <hyperlink href="http://docbook.sourceforge.net/">DocBook Repository</hyperlink> holds information about DocBook and its released versions.</para>
+
+            <para>My home site is at 
+            <hyperlink href="http://www.softwareadjuvant.com/">Software Adjuvant.com</hyperlink>
+
+            .</para>
+
+            <para>Pretty soon I hope to get 
+            <hyperlink href="http://www.agilemarkup.com/">AgileMarkup.com</hyperlink>
+
+            off the ground.</para>
+         </content>
+      </page>
+   </section>
+
+</website>

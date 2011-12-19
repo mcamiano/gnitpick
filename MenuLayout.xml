@@ -1,0 +1,239 @@
+<?xml version="1.0" ?>
+<menubar handlers="MenuItemFunctions">
+   <menu name="File" shortcutkey="F"> 
+      <menu name="New">
+         <item name="Project" />
+         <item name="Item" shortcutkey="I" />
+      </menu>
+      <item name="OpenProject" label="Open Project" mnemonic="P" />
+      <item name="OpenItem" label="Open Item" shortcutkey="O" mnemonic="O" />
+      <item/>
+      <item name="SaveItem" label="Save Item" shortcutkey="S" mnemonic="S" />      
+      <menu name="SaveProject" label="Save Project" >
+         <item name="SaveAll" label="Save All Tabs" />
+      </menu>
+      <item/>
+      <menu name="CloseProject" label="Close Project" >
+         <item name="CloseAll" label="Close All Tabs" />
+      </menu>
+      <item name="CloseItem" label="Close Item" shortcutkey="M" mnemonic="C"/>
+      <item/>
+      <item name="Exit" />
+   </menu>
+   <menu name="Edit" shortcutkey="E">
+      <item name="Undo" shortcutkey="Z" mnemonic="U"/>
+      <item name="Redo" shortcutkey="Y" mnemonic="R" />
+      <item />
+      <item name="Cut" shortcutkey="X" mnemonic="T" />
+      <item name="Copy"  shortcutkey="C"  mnemonic="C"/>
+      <item name="Paste" shortcutkey="V" mnemonic="P" />
+   </menu>
+   
+   <menu name="View" shortcutkey="W">
+      <item name="Source"  mnemonic="S" />
+      <item name="Tags" label="Tags-Up" />
+      <item/>
+      <item name="NextTab" label="Next Tab" shortcutkey="]"/>
+      <item name="PriorTab" label="Previous Tab" shortcutkey="["/>
+   </menu>
+   
+   <menu name="Tools" shortcutkey="T">
+      <item name="Query" label="XPath/XQuery" shortcutkey="Q" mnemonic="Q" />
+      <item name="QueryDomain" label="Query...">
+      	<radio name="All" label="In All Tabs"/>
+      	<radio name="Current" selected="selected" label="In Current Tab"/>
+      </item>
+      <item/>
+      <item name="Colorize" label="Toggle Color" mnemonic="C" />
+   </menu>   
+   
+   <menu name="Help" shortcutkey="H">
+      <item name="Unhelpful" label="Help Me!">
+         <um>Good help is so hard to come by these days.</um>
+         <um>The GUI is so intuitive we didn't think help was necessary.</um>
+         <um>It's all in your head. You don't really need help.</um>
+         <um>Keep trying.</um>
+         <um>I guess the honeymoon is over...</um>
+         <um>I feel just awful. Is there something wrong?</um>
+         <um>Pay me a dollar.</um>
+         <um>Just don't give up.</um>
+         <um>You're FIRED  -  No, just kidding. You're still stuck here.</um>
+         <um>Don't ask too many questions or someone might notice you don't know the answers.</um>
+         <um>Punt. It works for the rest of the programming team.</um>
+         <um>Did you really expect help?</um>
+         <um>I'm too tired to help.</um>
+         <um>Use Google.</um>
+         <um>Pay Mitch to help.</um>
+         <um>Aren't you too proud to ask for help?</um>
+         <um>Please not right now, I have a headache.</um>
+         <um>You didn't ask nicely enough. Wait 10 minutes and ask again more politely.</um>
+         <um>You didn't say 'Please'.</um>
+         <um>I don't feel like helping. I'm having a bad day.</um>
+         <um>Exception in thread \"AWT-EventQueue-0\" Traceback (innermost last): You should have paid Mitch.</um>
+         <um>Must be a serious problem. Wait right here!</um>
+         <um>Don't go anywhere. I'll be right back...</um>
+         <um>I'll have to get back to you on that.</um>
+         <um>I'm afraid I can't do that Dave.</um>
+         <um>Sure I'll help - after I get back from my break.</um>
+         <um>Please don't ask that again.</um>
+         <um>Why do you keep asking for help???</um>
+         <um>AARRRRRRGGGGGGGGHHHHHHHH!!!!!</um>
+         <um>...but my coffee will get cold....</um>
+         <um>You shouldn't need help because this program is written in Jython</um>
+         <um>When in doubt, mumble.</um>
+         <um>Slacker!</um>
+         <um>Seriously, if you need help that badly you should seek some professional assistance.</um>
+         <um>Read the FAQ. Wait - there is no FAQ.</um>
+         <um>Just keep trying. You'll get it eventually.</um>
+         <um>Why not just hit the computer? That usually makes me feel better.</um>
+         <um>It's too late for you.</um>
+         <um>Go back to school.</um>
+         <um>I don't want to right now - I'm watching my T.V. show.</um>
+         <um>Fine, fine. You'll get what you paid for.</um>
+         <um>&lt;cough&gt; Did you say 'Help'?</um>
+         <um>My clock say's it's past 5: I'm going home</um>
+         <um>Sorry, all operators are busy with other customers. Please Stand By.</um>
+         <um>I'm not trying to be unhelpful. It's just that I'm a machine.</um>
+         <um>To [MESSAGE REDACTED], all you have to do is [MESSAGE REDACTED]. Then you [MESSA</um>
+         <um>You're too stressed out. Takes some time off and relax a little.</um>
+         <um>Confounded users. Always asking for help.</um>
+         <um>The value of PI to one position is 3.</um>
+         <um>I'm cute when you're angry</um>
+         <um>Why should I help you?</um>
+         <um>Pleh is help spelled backwards.</um>
+         <um>That must be very frustrating.</um>
+         <um>No one's listening.</um>
+         <um>I'm sorry. What?</um>
+         <um>Eschew obfuscation.</um>
+         <um>Ignorance is bliss. I wouldn't want to disrupt your happy state of mind.</um>
+         <um>The Customer Service get-rich-quick scheme: Silence is golden.</um>
+         <um>What's the problem?</um>
+         <um>Ask a Mary, Mike, George, Fred, or Allen if one is available. Maybe there is an Alice nearby who can help.</um>
+         <um>Feel free to ask for help.</um>
+         <um>Never buy a house at a Fire Sale.</um>
+         <um>Turn off your computer to save as much as 3.6KWh over a work day.</um>
+         <um>I'm trying as hard as I can already!!!</um>
+         <um>Oh... not you again...</um>
+         <um>Hey! Hi there! What's up?</um>
+         <um>I'll have one large cheese pizza with everything on it.</um>
+         <um>You obviously haven't learned anything yet.</um>
+         <um>Try starting over again.</um>
+         <um>Get someone else to do it.</um>
+         <um>I'm on vacation.</um>
+         <um>I honestly don't know what you're talking about.</um>
+         <um>Try taking a nap.</um>
+         <um>Eat more fiber.</um>
+         <um>I'm not sure how.</um>
+         <um>Work smarter, not harder.</um>
+         <um>Why won't you leave me alone?!</um>
+         <um>&lt;sound of='weeping' cause='computer'/&gt;</um>
+         <um>Help function Not Implemented.</um>
+         <um>Help function Implemented, but not very helpful.</um>
+         <um>&lt;Boop>&lt;Beep>&lt;Boop> The number you have dialed has been disconnected. Please hang up and try again.</um>
+         <um>Does not compute!</um>
+         <um>Please wag your arms menacingly and say 'Danger, Danger Will Robinson!'</um>
+         <um>Try dropping on the floor and barking like a dog.</um>
+         <um>What, did you think this was Open Office?</um>
+         <um>If you think this help is bad, try Mi{{c{@ {#d   lost carrier</um>
+         <um>Just shout 'That Lazy, Good For Nothing Programmer'. It won't help but you'll feel better for it.</um>
+         <um>Humor me...</um>
+         <um>Go grab a cup of java and ask me again when you're awake.</um>
+         <um>Ding!</um>
+         <um>User Error! User pressed Help Me when Help is presently useless!</um>
+         <um>Try upgrading to the commercial version.</um>
+         <um>First read through 'Help : About'</um>
+         <um>Ouch!</um>
+         <um>That tickles :-)</um>
+         <um>Hey Harry, some monkey keeps hitting the 'Help Me!' menu. How do I make them stop?</um>
+         <um>I feel sick.</um>
+         <um>Do NOT touch that.</um>
+         <um>Having a slow day today, are we?</um>
+         <um>Try complaining a lot. That always helps.</um>
+         <um>Help: advice, aid, assist, avail, balm, benefit, comfort, cooperation, corrective, cure, guidance, hand, helping hand, lift, maintenance, nourishment, relief, remedy, service, succor, support, sustenance, use, utility</um>
+         <um>'GnitPick for Dummies' isn't published yet.</um>
+         <um>Help:  (1) To give assistance to; aid (2) To contribute to the furtherance of; promote.</um>
+         <um>Stop repeating me!</um>
+         <um>You need help.</um>
+         <um>Try the menu item 'Help -> Help Me!'</um>
+         <um>Memory Fault - Core Dumped. Sorry, I couldn't hold it in.</um>
+         <um>Uhhh... yeah... um... no... Hey, wow, look at the time. Gotta Go!</um>
+         <um>Ommmmmmmmmmmmmmmm</um>
+         <um>W00T!</um>
+         <um>Sitzen on dem platzen</um>
+         <um>If you are unsatisfied with the level of customer service, call l34o4@@@@#{{{{</um>
+         <um>Touchy, aren't we</um>
+         <um>Can't you figure it out yourself?</um>
+         <um>RTFM</um>
+         <um>Ewww! Stop clicking there!</um>
+         <um>The value of pi to three places is 3.141</um>
+         <um>'Help' is not here right now. Please leave a message after the beep. BEEP.</um>
+         <um>Having a tough day?</um>
+         <um>Why should I care?</um>
+         <um>I'm a machine. You're organic. It just wouldn't work out...</um>
+         <um>Cauliflower is a good source of sulfur.</um>
+         <um>Overcooking garlic can make it bitter.</um>
+         <um>I wonder why I wonder why. I wonder why, I wonder. I wonder why I wonder why I wonder why I wonder.</um>
+         <um>&lt;YAWN&gt;</um>
+         <um>Try again in five days. </um>
+         <um>The server crashed. We'll have it back up in a few hours.</um>
+         <um>I like eggs.</um>
+         <um>Shhhh. I'm trying to think.</um>
+         <um>What a hack.</um>
+         <um>SuhWEET!</um>
+         <um>; P</um>
+         <um>Hilbert couldn't figure it out, but Gödel got it.</um>
+         <um>Perhaps you misclicked.</um>
+         <um>Are you in any pain?</um>
+         <um>SumBody SAAAAAAVEEE MEEEEE</um>
+         <um>Get your grades up, and then we'll talk.</um>
+         <um>No. No. No no no no no no no no nooooooooo</um>
+         <um>At last we will reveal ourselves. At last we will have our revenge.</um>
+         <um>Kind of ironic, in't it?</um>
+         <um>Take two aspirin and call me in the morning.</um>
+         <um>Blah, Blah, Blah. Can't you click on any other menu item?</um>
+         <um>I don't have to listen to this. I'm leaving!</um>
+         <um>Go away kid, yer' botherin me.</um>
+         <um>It's kind of private. I'd rather not talk about it.</um>
+         <um>You are not authorized to use this feature.</um>
+         <um>I want to, but I just can't bring myself to do it.</um>
+         <um>Hey, I've got a reputation to uphold.</um>
+         <um>If I help you, I'll have to help every other shlep that asks.</um>
+         <um>We can't have that now, can we?</um>
+         <um>Tut tut. There's no need to concern yourself.</um>
+         <um>Look over there! Did you see it!</um>
+         <um>Go read a Calvin comic.</um>
+         <um>Its the three stooges!</um>
+         <um>LMAL</um>
+         <um>ROTFL</um>
+         <um>TANSTAAFL</um>
+         <um>BRB</um>
+         <um>Help Me!</um>
+         
+      </item>
+      <item name="Contents" >
+         <html>
+          <body>
+           <img src="file:///eclipse/workspace/grazer/src/samples/icon.gif">
+           </img>
+           
+           <center><h2>Welcome to GnitPick, the tool for picking nits</h2></center>
+           <p>This tool is in its beginning stages. No real help is available as of yet.</p>
+           <p>You should know that Mitch accepts payment in exchange for support. If you don't want to do that, check out the "Help -> Help Me!" menu item as a last resort.</p>
+           
+          </body>
+         </html>
+      </item>
+      <item name="About" >
+         <description>Gnit Pick
+
+Gnit Item and Picklist Tool
+Version 0.5 (alpha)
+
+Copyright 2005 by Mitch Amiano,
+Agile Markup Corporation
+
+http://home.AgileMarkup.com/</description>
+ <title>About GnitPick</title>
+      </item>
+   </menu>
+</menubar>

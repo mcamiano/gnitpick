@@ -1,0 +1,15 @@
+User stories are: (from http://extremeprogramming.org/ )
+    * Around three sentences.
+    * Written by the customer in the customers terminology.
+    * One or more Acceptance Tests must be created to validate that the user story was correctly implemented.
+    * Developers estimate the duration of a User Story.
+    * User stories should be estimated to 1,2 or 3 weeks of ideal developement time.
+    * Ideal developement time is how long it takes to implement the story if there are no distractions.
+    * User stories that are < 1 week should be combined.
+    * User stories that are > 3 weeks should be broken down.
+    * 80 plus or minus 20 is the ideal number to create a release plan.
+
+This directory contains stories for the GnitPick editor. Gnitpick is an editor for lists of items. Applications include punchlist management; small team bug tracking; contact management; user story editing; Web site article editing; and maintenance of static RSS feed resources. 
+
+
+Storyboarding: http://www.cinema.sfsu.edu/curricpages/cine354/storyboarding.html
